@@ -32,11 +32,21 @@ export default function About() {
               Adobe Photoshop, Adobe Illustrator, Canva, Affinity, Figma
             </p>
             <div className="flex gap-3 flex-wrap">
-              {/* Icons placeholder - using generic colored boxes for software icons */}
-              <div className="w-10 h-10 rounded-lg bg-[#31A8FF] flex items-center justify-center font-bold text-xs text-[#001E36]">Ps</div>
-              <div className="w-10 h-10 rounded-lg bg-[#FF9A00] flex items-center justify-center font-bold text-xs text-[#330000]">Ai</div>
-              <div className="w-10 h-10 rounded-lg bg-[#00C4CC] flex items-center justify-center font-bold text-xs text-white">Ca</div>
-              <div className="w-10 h-10 rounded-lg bg-[#A259FF] flex items-center justify-center font-bold text-xs text-white">Fi</div>
+              <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <img src="/photoshop-icon.png" alt="Photoshop" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <img src="/illustrator-icon.png" alt="Illustrator" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <img src="/canva-icon.png" alt="Canva" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <img src="/affinity-icon.png" alt="Affinity" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <img src="/figma-icon.png" alt="Figma" className="w-full h-full object-contain" />
+              </div>
             </div>
           </div>
 
@@ -46,9 +56,26 @@ export default function About() {
               <Cpu className="w-5 h-5" /> AI Tools
             </h3>
             <p className="text-sm text-muted-foreground mb-2">(for Ideation & Productivity)</p>
-            <p className="text-white/80">
+            <p className="text-white/80 mb-4">
               ChatGPT, Gemini, Claude, Ideogram, Canva AI
             </p>
+            <div className="flex gap-3 flex-wrap">
+              <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <img src="/chatgpt-icon.png" alt="ChatGPT" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <img src="/gemini-icon.png" alt="Gemini" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <img src="/claude-icon.png" alt="Claude" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <img src="/ideogram-icon.png" alt="Ideogram" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <img src="/canva-icon.png" alt="Canva AI" className="w-full h-full object-contain" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -96,9 +123,9 @@ export default function About() {
             <div className="relative mt-8 md:mt-0">
                 <div className="absolute inset-0 bg-gradient-primary blur-[60px] opacity-40 -z-10 rounded-full" />
                 <img 
-                  src={portraitImage} 
+                  src="/chirag-profile.png" 
                   alt="Chirag Singh Kushwah" 
-                  className="w-full max-w-[300px] mx-auto rounded-2xl grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full max-w-[300px] mx-auto rounded-2xl hover:grayscale-0 transition-all duration-500 object-cover shadow-2xl"
                 />
             </div>
         </div>
