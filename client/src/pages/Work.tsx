@@ -7,23 +7,23 @@ import socialImg from "@assets/generated_images/social_media_fashion_post.png";
 const projects = [
   {
     id: 1,
-    title: "Neon Beats Festival",
+    title: "Social Media Poster",
     category: "Poster Design",
-    image: posterImg,
+    image: "/poster-design.png",
     size: "col-span-1 md:col-span-2 row-span-2"
   },
   {
     id: 2,
-    title: "Luxe Identity",
+    title: "Product Packaging",
     category: "Branding",
-    image: brandImg,
+    image: "/packaging-design.png",
     size: "col-span-1"
   },
   {
     id: 3,
-    title: "Tech Review 2025",
+    title: "YouTube Thumbnail",
     category: "YouTube Thumbnail",
-    image: thumbImg,
+    image: "/thumbnail-design.png",
     size: "col-span-1"
   },
   {
@@ -38,14 +38,14 @@ const projects = [
     id: 5,
     title: "Summer Vibes",
     category: "Poster Design",
-    image: posterImg,
+    image: "/poster-design.png",
     size: "col-span-1"
   },
   {
     id: 6,
     title: "Minimalist Corp",
     category: "Branding",
-    image: brandImg,
+    image: "/packaging-design.png",
     size: "col-span-1"
   },
 ];
