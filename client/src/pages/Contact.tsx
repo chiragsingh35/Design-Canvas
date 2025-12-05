@@ -27,11 +27,12 @@ export default function Contact() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
+    // We're using the button as a mailto link now, but keeping form for validation if needed later
+    window.location.href = `mailto:chiragasom@gmail.com?subject=Project Inquiry from ${values.name}&body=${values.message}`;
     toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
+      title: "Opening Email Client...",
+      description: "If nothing happens, please email me directly at chiragasom@gmail.com",
     });
-    form.reset();
   }
 
   return (
@@ -42,7 +43,7 @@ export default function Contact() {
             Let's <span className="text-gradient">Talk</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-10">
-            Ready to start your next project? Fill out the form or reach out directly.
+            Ready to start your next project? Reach out directly or use the form to prepare your email.
           </p>
 
           <div className="space-y-8">
@@ -52,20 +53,10 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Email Me</p>
-                <a href="mailto:hello@ckvisuals.com" className="text-lg font-bold hover:text-primary transition-colors">hello@ckvisuals.com</a>
+                <a href="mailto:chiragasom@gmail.com" className="text-lg font-bold hover:text-primary transition-colors">chiragasom@gmail.com</a>
               </div>
             </div>
             
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-primary">
-                <Phone className="w-5 h-5" />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Call Me</p>
-                <a href="tel:+919876543210" className="text-lg font-bold hover:text-primary transition-colors">+91 98765 43210</a>
-              </div>
-            </div>
-
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-primary">
                 <MapPin className="w-5 h-5" />
@@ -126,8 +117,10 @@ export default function Contact() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full h-12 bg-gradient-primary font-bold text-lg hover:opacity-90 transition-opacity">
-                Send Request <Send className="w-4 h-4 ml-2" />
+              <Button type="button" asChild className="w-full h-12 bg-gradient-primary font-bold text-lg hover:opacity-90 transition-opacity">
+                <a href="mailto:chiragasom@gmail.com">
+                  Send Request <Send className="w-4 h-4 ml-2" />
+                </a>
               </Button>
             </form>
           </Form>
