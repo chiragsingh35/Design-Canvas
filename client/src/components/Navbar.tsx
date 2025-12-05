@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import portraitImage from "@assets/generated_images/portrait_of_a_male_graphic_designer.png";
 
 export function Navbar() {
   const [location] = useLocation();
@@ -39,7 +38,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group cursor-pointer">
           <div className="relative w-10 h-10 rounded-full overflow-hidden border border-white/20 group-hover:border-primary transition-colors">
-             <img src={portraitImage} alt="CK Logo" className="object-cover w-full h-full" />
+             <img src="/logo.jpg" alt="CK Logo" className="object-cover w-full h-full" />
           </div>
           <div className="flex flex-col">
             <span className="font-heading font-bold text-lg leading-none text-white">CK Visual Studios</span>

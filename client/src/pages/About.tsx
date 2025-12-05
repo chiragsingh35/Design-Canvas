@@ -84,9 +84,13 @@ export default function About() {
                     <li>2+ years of creative design experience</li>
                 </ul>
                 
-                <button className="mt-8 px-8 py-3 rounded-full bg-gradient-primary text-white font-bold flex items-center gap-2 hover:opacity-90 transition-opacity shadow-lg shadow-primary/25">
+                <a 
+                  href="/resume.pdf" 
+                  download="Chirag_Singh_Kushwah_Resume.pdf"
+                  className="mt-8 px-8 py-3 rounded-full bg-gradient-primary text-white font-bold flex items-center gap-2 hover:opacity-90 transition-opacity shadow-lg shadow-primary/25 inline-flex"
+                >
                     Download Resume <Download className="w-4 h-4" />
-                </button>
+                </a>
             </div>
             
             <div className="relative mt-8 md:mt-0">
