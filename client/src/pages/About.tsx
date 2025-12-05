@@ -3,9 +3,9 @@ import portraitImage from "@assets/generated_images/portrait_of_a_male_graphic_d
 
 export default function About() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mt-8">
+    <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-8 items-start mt-8">
       {/* Left Info Card */}
-      <div className="lg:col-span-5 glass-panel rounded-[2rem] p-8 md:p-10 relative overflow-hidden">
+      <div className="lg:col-span-5 w-full glass-panel rounded-[2rem] p-8 md:p-10 relative overflow-hidden">
         {/* Decorative glow */}
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-primary" />
         
@@ -81,7 +81,7 @@ export default function About() {
       </div>
 
       {/* Right Profile Section */}
-      <div className="lg:col-span-7 flex flex-col justify-center lg:pl-12">
+      <div className="lg:col-span-7 w-full flex flex-col justify-center lg:pl-12">
         <div className="mb-4 flex justify-end">
              <h2 className="text-3xl font-heading font-bold text-white border-b-2 border-white inline-block pb-1">About</h2>
         </div>
