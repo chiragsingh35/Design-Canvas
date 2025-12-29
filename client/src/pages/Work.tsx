@@ -96,11 +96,19 @@ export default function Work() {
                 />
               </div>
 
-              {/* Overlay - CENTERED CATEGORY ONLY */}
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                <span className="text-white font-bold text-xl md:text-2xl tracking-widest uppercase translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              {/* Overlay - BACK TO ORIGINAL STYLE (Bottom Slide) */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 pointer-events-none">
+
+                {/* Small Pink Label */}
+                <span className="text-primary font-bold text-sm mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                   View Project
+                </span>
+
+                {/* Big White Category Name (Instead of "po3") */}
+                <span className="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100 uppercase">
                   {project.category}
                 </span>
+
               </div>
             </motion.div>
           ))}
